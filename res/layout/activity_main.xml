@@ -1,17 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity" >
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
 
-    <TextView
-        android:id = "@+id/wc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+    <ImageView
+        android:id="@+id/logo_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/uselogin"
+        android:adjustViewBounds="true"
+        android:gravity="center"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo3" />
+
+    <Button
+        android:id="@+id/uselogin"
+        android:layout_width="240dip"
+        android:layout_height="50dip"
+        android:layout_above="@+id/adminlogin"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn5_style"
+        android:gravity="center"
+        android:text="用户登录"
+        android:textColor="#FFFFFF"
+        android:textSize="20.0sp" />
+
+    <Button
+        android:id="@+id/adminlogin"
+        android:layout_width="240dip"
+        android:layout_height="50dip"
+        android:layout_alignLeft="@+id/uselogin"
+        android:layout_above="@+id/workerlogin"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/btn3_style"
+        android:gravity="center"
+        android:height="25.0dip"
+        android:text="管理员登录"
+        android:textColor="#ffffff"
+        android:textSize="20.0sp" />
+    
+    <Button
+        android:id="@+id/workerlogin"
+        android:layout_width="240dip"
+        android:layout_height="50dip"
+        android:layout_alignLeft="@+id/uselogin"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="36dp"
+        android:layout_marginTop="10dip"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn5_style"
+        android:gravity="center"
+        android:text="家政人员登录"
+        android:textColor="#FFFFFF"
+        android:textSize="20.0sp" />
 
 </RelativeLayout>
