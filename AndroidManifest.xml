@@ -1,27 +1,744 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.wch"
+    package="org.cct.home"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0.1" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
 
     <uses-sdk
-        android:minSdkVersion="16"
-        android:targetSdkVersion="17" />
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 挂载和反挂载的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 读取手机状态 ,如来了新电话 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- 网络访问权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 百度地图定位功能所需权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- 拨打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" >
+    </uses-permission>
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/test"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
         <activity
-            android:name="com.example.wch.MainActivity"
-            android:label="@string/app_name" >
+            android:name="org.cct.home.welcome.welcome"
+            android:process=":progress.main"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="org.cct.home.welcome.home"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.UseLogin"
+            android:label="@string/use"
+            android:screenOrientation="portrait" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.AdminLogin"
+            android:label="@string/admin"
+            android:screenOrientation="portrait" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="org.cct.home.use.UseHome"
+            android:label="@string/use"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.RemindManage"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.WarnRecord"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin1Home"
+            android:label="@string/admin1"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin2Home"
+            android:label="@string/admin2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin3Home"
+            android:label="@string/admin3"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin4Home"
+            android:label="@string/admin4"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin5Home"
+            android:label="@string/admin5"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin6Home"
+            android:label="@string/admin6"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.adminhome7"
+            android:label="@string/admin7"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.AddService"
+            android:label="@string/addadd"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.AddServiceEdit"
+            android:label="@string/addedit"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin1UseRegist"
+            android:label="@string/login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin2UseRegist"
+            android:label="@string/login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin3UseQuery"
+            android:label="@string/query"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin1UseQuery"
+            android:label="@string/query"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin2UseQuery"
+            android:label="@string/query"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin1PasswordChange"
+            android:label="@string/passwordalter"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin2PasswordChange"
+            android:label="@string/passwordalter"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin3PasswordChange"
+            android:label="@string/passwordalter"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin1Infomation"
+            android:label="@string/personal"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin2Infomation"
+            android:label="@string/passwordalter"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin1CareSelect"
+            android:label="@string/select"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin2CareSelect"
+            android:label="@string/select"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin3CareSelect"
+            android:label="@string/select"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.CareTo"
+            android:label="@string/result"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.CareDetail"
+            android:label="@string/result"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin1Service"
+            android:label="@string/addservice"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin2Service"
+            android:label="@string/addservice"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin3Service"
+            android:label="@string/addservice"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.UnicomSaleQuery"
+            android:label="@string/manage1"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.UnicomSaleManage"
+            android:label="@string/result"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.UnicomQuery"
+            android:label="@string/manage2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.UnicomManage"
+            android:label="@string/result"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin3Infomation"
+            android:label="@string/personal"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin3StreetQuery"
+            android:label="@string/streetmanage"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin3CountyQuery"
+            android:label="@string/sociatymanage"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.StreetManageQuery"
+            android:label="@string/streetsmanage"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Street"
+            android:label="@string/result"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.County"
+            android:label="@string/result"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.StreetManage"
+            android:label="@string/result"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin3System"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin4UseQuery"
+            android:label="@string/query"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin4CareSelect"
+            android:label="@string/select"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin4StreetQuery"
+            android:label="@string/streetmanage"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin4CountyQuery"
+            android:label="@string/sociatymanage"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin4Service"
+            android:label="@string/addservice"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin4Infomation"
+            android:label="@string/personal2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin4PasswordChange"
+            android:label="@string/passwordalter"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.CountyManageQuery"
+            android:label="@string/plot"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.CountyManage"
+            android:label="@string/plotresult"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.AccountManage"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin4System"
+            android:label="@string/plotresult"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin5CareSelect"
+            android:label="@string/select"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin5StreetQuery"
+            android:label="@string/streetmanage"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin5CountyQuery"
+            android:label="@string/sociatymanage"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin5Service"
+            android:label="@string/addservice"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.OldCadreManageQuery"
+            android:label="@string/eldermanager"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.OldCadreManage"
+            android:label="@string/result"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin5Infomation"
+            android:label="@string/personal3"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin5PasswordChange"
+            android:label="@string/passwordalter"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin5System"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin6CareSelect"
+            android:label="@string/select"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin6Infomation"
+            android:label="@string/personal4"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.Admin6PasswordChange"
+            android:label="@string/passwordalter"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.UseCareSelevt"
+            android:label="@string/selectorforbid"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.use_1_1_detail"
+            android:label="@string/selectorforbid"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.SosAlert"
+            android:label="@string/fall"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.TempreAlert"
+            android:label="@string/hightemp"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.FallAlert"
+            android:label="@string/SOS"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.SilenceAlert"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.SilenceAlertSet"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.CycleRemind"
+            android:label="@string/repeat"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.CycleRemindAdd"
+            android:label="@string/repeatadd"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.CycleRemindEdit"
+            android:label="@string/addedit"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.OnceRemind"
+            android:label="@string/disposable"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.OnceRemindAdd"
+            android:label="@string/disposableadd"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.OnceRemindEdit"
+            android:label="@string/addedit"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.WeekRemind"
+            android:label="@string/weekormonth"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.WeekRemindAdd"
+            android:label="@string/weekormonthadd"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.WeekRemindEdit"
+            android:label="@string/addedit"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.use_3_4"
+            android:label="@string/healthdetail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.use_3_5"
+            android:label="@string/healthmonth"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.use_3_6"
+            android:label="@string/count"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.CareInformation"
+            android:label="@string/basic"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.use_4_2"
+            android:label="@string/careself"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.use_4_3"
+            android:label="@string/health"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.use_4_4"
+            android:label="@string/blood"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.use_5_1"
+            android:label="@string/currentlocation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.use_5_2"
+            android:label="@string/track"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.use_5_3"
+            android:label="@string/round"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.QuickSet"
+            android:label="@string/shortcut"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.use_6_2"
+            android:label="@string/service"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.UseInformation"
+            android:label="@string/useinfo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.use.PasswordChange"
+            android:label="@string/usepassword"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.admin7_1"
+            android:label="@string/unicomsell"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.admin7_1result"
+            android:label="@string/unicomsellresult"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.admin7_2"
+            android:label="@string/unicomadmin"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.admin7_2result"
+            android:label="@string/unicomadminresult"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.admin7_3"
+            android:label="@string/street"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.admin7_3result"
+            android:label="@string/streetresult"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.admin7_4"
+            android:label="@string/plot"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.admin7_4result"
+            android:label="@string/plotresult"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.admin7_5"
+            android:label="@string/elder"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.admin7_5result"
+            android:label="@string/elderresult"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.admin7_6"
+            android:label="@string/doctor"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.admin7_6result"
+            android:label="@string/doctorresult"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.admin7_7_1"
+            android:label="@string/personalinfo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.admin.admin7_7_2"
+            android:label="@string/adminpassword"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.location.TestActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.map.MapActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.worker.WorkerHome"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.worker.WorkerLogin"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.worker.WorkerPswdChange"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.worker.WorkerBack"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.worker.WorkerCome"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.worker.WorkerInfomation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.worker.ListTest"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.cct.home.sos.Sos"
+            android:icon="@drawable/sos"
+            android:label="@string/soshelp"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.cct.home.dial.dial"
+            android:icon="@drawable/dial"
+            android:label="@string/dial"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 百度定位服务    android:permission="android.permission.BAIDU_LOCATION_SERVICE"> -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+        <service android:name="org.cct.home.location.FirstService" >
+            <intent-filter>
+                <action android:name="org.cct.home.location.FirstService" />
+            </intent-filter>
+        </service>
+        <service android:name="org.cct.home.sos.SosService" >
+            <intent-filter>
+                <action android:name="org.cct.home.sos.SosService" />
+            </intent-filter>
+        </service>
+        <service android:name="org.cct.home.location.SecondService" >
+            <intent-filter>
+                <action android:name="org.cct.home.location.SecondService" />
+            </intent-filter>
+        </service>
+        <service android:name="org.cct.home.location.ThirdService" >
+            <intent-filter>
+                <action android:name="org.cct.home.location.ThirdService" />
+            </intent-filter>
+        </service>
+        <service android:name="org.cct.home.location.SilenceUpdateService" >
+            <intent-filter>
+                <action android:name="org.cct.home.location.SilenceUpdateService" />
+            </intent-filter>
+        </service>
+        <service android:name="org.cct.home.location.SilenceJudgeService" >
+            <intent-filter>
+                <action android:name="org.cct.home.location.SilenceJudgeService" />
+            </intent-filter>
+        </service>
+        <service android:name="org.cct.home.location.SilenceLocationService" >
+            <intent-filter>
+                <action android:name="org.cct.home.location.SilenceLocationService" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

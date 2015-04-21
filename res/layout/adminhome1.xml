@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     >
+
+    <LinearLayout
+        android:id="@+id/headtitle_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="#663333"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imageButton_adminhome1"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/title_style"
+            android:src="@drawable/btn1"/>
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_height="24dip"
+            android:layout_gravity="center"
+            android:src="@drawable/v5_0_1_flipper_head_separator" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dip"
+            android:text="功能菜单"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="8dip"
+            />
+    </LinearLayout>
+
+  
+
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/headtitle_linear"
+            android:scrollbars="vertical" >
+
+            <TableLayout
+                android:id="@+id/buttons_table"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#99ffffff"
+                android:orientation="vertical" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_marginRight="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffffff"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/admin1_btn1"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_margin="5dp"
+                        android:text="用户注册"
+                        android:background="@drawable/btn1_style"
+                        android:textColor="#ffffffff" />
+
+                    <Button
+                        android:id="@+id/admin1_btn2"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/logo2"
+                        android:textColor="#ffffffff" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffffff"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/admin1_btn3"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/btn3_style"
+                        android:text="用户信息查看"
+                        android:textColor="#ffffffff" />
+
+                    <Button
+                        android:id="@+id/admin1_btn4"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/btn4_style"
+                        android:text="选择关怀对象"
+                        android:textColor="#ffffffff" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffffff"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/admin1_btn5"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/btn5_style"
+                        android:text="增值服务"
+                        android:textColor="#ffffffff" />
+
+                    <Button
+                        android:id="@+id/admin1_btn6"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/btn6_style"
+                        android:text="个人信息"
+                        android:textColor="#ffffffff" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffffff"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/admin1_btn7"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/btn7_style"
+                        android:text="密码修改"
+                        android:textColor="#ffffffff" />
+
+                    <Button
+                        android:id="@+id/admin1_btn8"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/btn8_style"
+                        android:text="退出登录"
+                        android:textColor="#ffffffff" />
+                </TableRow>
+
+               
+
+               
+            </TableLayout>
+        </ScrollView>
+ 
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/headtitle_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="#663333"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imageButton_adminhome_2_1_all"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/title_style"
+            android:src="@drawable/v5_0_1_flipper_head_flip" />
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_height="24dip"
+            android:layout_gravity="center"
+            android:src="@drawable/v5_0_1_flipper_head_separator" />
+        
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="48dip"
+            android:text="选择关怀对象"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="8dip"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+
+            <LinearLayout
+                android:id="@+id/LinearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <Spinner
+                    android:id="@+id/admin1selectspinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <Spinner
+                    android:id="@+id/admin1selectspinner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <Spinner
+                    android:id="@+id/admin1selectspinner3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <Spinner
+                    android:id="@+id/admin1selectspinner4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <Spinner
+                    android:id="@+id/admin1selectspinner5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <Button
+                    android:id="@+id/admin1selectbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="查询" 
+                     android:background="@drawable/v5_0_1_guide_button_blue_background"/>
+            </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
