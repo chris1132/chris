@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/headtitle_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="#663333"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imageButton_adminhome_1_2_all"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/title_style"
+            android:src="@drawable/v5_0_1_flipper_head_flip" />
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_height="24dip"
+            android:layout_gravity="center"
+            android:src="@drawable/v5_0_1_flipper_head_separator" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dip"
+            android:text="用户信息查看"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="8dip"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/qtextView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="查询用户的用户名:" />
+
+                <Button
+                    android:id="@+id/qbtn"
+                    android:layout_width="64dip"
+                    android:layout_height="40dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/qtextView1"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="查询" 
+                     android:background="@drawable/v5_0_1_guide_button_blue_background"/>
+
+                <EditText
+                    android:id="@+id/qeditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/qtextView1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@+id/qbtn"
+                    android:hint="请输入用户名" 
+                    android:background="@drawable/v5_0_1_publisher_poi_text_bg"/>
+
+                <TextView
+                    android:id="@+id/qtextView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qbtn"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="管理员名称:" />
+
+                <TextView
+                    android:id="@+id/qtextView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/qbtn"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/qtextView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qtextView2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="姓名:" />
+
+                <TextView
+                    android:id="@+id/qtextView33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/qtextView2"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/qtextView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qtextView3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="手机号码:" />
+
+                <TextView
+                    android:id="@+id/qtextView44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/qtextView3"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/qtextView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qtextView4"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="身份证号码名称:" />
+
+                <TextView
+                    android:id="@+id/qtextView55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/qtextView4"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/qtextView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qtextView5"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="邮箱:" />
+
+                <TextView
+                    android:id="@+id/qtextView66"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/qtextView5"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/qtextView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qtextView6"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="状态:" />
+
+                <TextView
+                    android:id="@+id/qtextView77"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/qtextView6"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/qtextView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qtextView7"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="家庭住址:" />
+
+                <TextView
+                    android:id="@+id/qtextView88"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/qtextView7"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/qtextView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qtextView8"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="注册时间:" />
+
+                <TextView
+                    android:id="@+id/qtextView99"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/qtextView8"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/qtextView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qtextView9"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="上次登入时间:" />
+
+                <TextView
+                    android:id="@+id/qtextView0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/qtextView9"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp" />
+            </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

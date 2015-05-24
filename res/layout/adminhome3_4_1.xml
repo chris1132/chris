@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/headtitle_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="#663333"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imageButton_admin_3_4_1"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/title_style"
+            android:src="@drawable/v5_0_1_flipper_head_flip" />
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_height="24dip"
+            android:layout_gravity="center"
+            android:src="@drawable/v5_0_1_flipper_head_separator" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dip"
+            android:text="个人信息"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="8dip"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="管理员账户信息操作"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv1"
+                    android:layout_margin="10dp"
+                    android:text="管理员名称:" />
+
+                <TextView
+                    android:id="@+id/personal3adminname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv1"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/tv2"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv2"
+                    android:layout_margin="15dp"
+                    android:text="姓名:" />
+
+                <EditText
+                    android:id="@+id/personal3name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/personal3adminname"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv2"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/v5_0_1_publisher_poi_text_bg"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv3"
+                    android:layout_margin="15dp"
+                    android:text="手机号码:" />
+
+                <EditText
+                    android:id="@+id/personal3phonenumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/personal3adminname"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv3"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/v5_0_1_publisher_poi_text_bg"
+                    android:inputType="phone"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv4"
+                    android:layout_margin="15dp"
+                    android:text="邮箱:" />
+
+                <EditText
+                    android:id="@+id/personal3email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/personal3adminname"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv4"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/v5_0_1_publisher_poi_text_bg"
+                    android:inputType="textEmailAddress"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv5"
+                    android:layout_margin="15dp"
+                    android:text="家庭住址:" />
+
+                <EditText
+                    android:id="@+id/personal3address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/personal3adminname"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv5"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/v5_0_1_publisher_poi_text_bg"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv6"
+                    android:layout_margin="15dp"
+                    android:text="注册时间:" />
+
+                <TextView
+                    android:id="@+id/personal3canceltime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/personal3adminname"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv6"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv7"
+                    android:layout_margin="15dp"
+                    android:text="上次登入时间:" />
+
+                <TextView
+                    android:id="@+id/personal3lasttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/personal3adminname"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv7"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/personal3btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_below="@+id/tv8"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/v5_0_1_guide_button_blue_background"
+                    android:text="确定" />
+            </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

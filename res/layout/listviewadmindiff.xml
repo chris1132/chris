@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="4dip"
+    android:paddingLeft="12dip"
+    android:paddingRight="12dip" >
+
+    <TextView
+        android:id="@+id/managerNumcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Date" />
+
+    <TextView
+        android:id="@+id/manageradminName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/managerNumcount"
+        android:text="No Date" />
+
+    <TextView
+        android:id="@+id/managerName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/manageradminName"
+        android:layout_toRightOf="@+id/managerNumcount"
+        android:text="No Date" />
+
+    <TextView
+        android:id="@+id/managerPhone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/managerName"
+        android:layout_toRightOf="@+id/managerNumcount"
+        android:text="No Date" />
+    
+    <TextView
+        android:id="@+id/managerAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/managerPhone"
+        android:layout_toRightOf="@+id/managerNumcount"
+        android:text="No Date" />
+
+</RelativeLayout>

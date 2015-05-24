@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/headtitle_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="#663333"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imageButton5_3_1"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/title_style"
+            android:src="@drawable/btn1" />
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_height="24dip"
+            android:layout_gravity="center"
+            android:src="@drawable/v5_0_1_flipper_head_separator" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dip"
+            android:layout_marginLeft="8dip"
+            android:gravity="center_vertical"
+            android:text="老干部局管理"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/RelativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <Spinner
+                android:id="@+id/admin3manage2spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" />
+
+            <Spinner
+                android:id="@+id/admin3manage2spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <Spinner
+                android:id="@+id/admin3manage2spinner3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <Button
+                android:id="@+id/admin3manage3btn"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/v5_0_1_guide_button_blue_background"
+                android:text="查询" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

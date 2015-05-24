@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/headtitle_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="#663333"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imageButton_2_2_all"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/title_style"
+            android:src="@drawable/v5_0_1_flipper_head_flip" />
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_height="24dip"
+            android:layout_gravity="center"
+            android:src="@drawable/v5_0_1_flipper_head_separator" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dip"
+            android:layout_marginLeft="8dip"
+            android:gravity="center_vertical"
+            android:text="关怀对象基本信息"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvinf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nowinf"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/adminhome_2_2_all_sv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/adminhome_2_2_all_l1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvinfnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="设备编号" />
+
+                <TextView
+                    android:id="@+id/tvinfname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名" />
+
+                <TextView
+                    android:id="@+id/tvinfsex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="性别" />
+
+                <TextView
+                    android:id="@+id/tvinfnation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="民族" />
+
+                <TextView
+                    android:id="@+id/tvinfnum1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机号码" />
+
+                <TextView
+                    android:id="@+id/tvinfnum2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="固定号码" />
+
+                <TextView
+                    android:id="@+id/tvinfidnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="身份证号" />
+
+                <TextView
+                    android:id="@+id/tvinfbirth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="生日" />
+
+                <TextView
+                    android:id="@+id/tvinfloc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="常住地址" />
+
+                <TextView
+                    android:id="@+id/tvinfh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="身高(m)" />
+
+                <TextView
+                    android:id="@+id/tvinfw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="体重(kg)" />
+
+                <TextView
+                    android:id="@+id/tvinfprovince"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="所在省" />
+
+                <TextView
+                    android:id="@+id/tvinfcity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="所在市" />
+
+                <TextView
+                    android:id="@+id/tvinfcounty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="所在县/区" />
+
+                <TextView
+                    android:id="@+id/tvinfstreet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="所在街道" />
+
+                <TextView
+                    android:id="@+id/tvinfneighbor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="所在小区" />
+
+                <TextView
+                    android:id="@+id/tvinfparentnum1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="监护人号码1(默认)" />
+
+                <TextView
+                    android:id="@+id/tvinfparentnum2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="监护人号码2" />
+
+                <TextView
+                    android:id="@+id/tvinfparentnum3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="监护人号码3(默认)" />
+
+                <TextView
+                    android:id="@+id/tvinfother"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="备注" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/adminhome_2_2_all_l2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+               
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textsex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textnation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textnum1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textnum2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textidnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textbirth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textloc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/texth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textprovince"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textcity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textcounty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textstreet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textneighbor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textparentnum1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textparentnum2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textparentnum3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textother"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

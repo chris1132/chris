@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/headtitle_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="#663333"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imageButton_addservice"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/title_style"
+            android:src="@drawable/v5_0_1_flipper_head_flip" />
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_height="24dip"
+            android:layout_gravity="center"
+            android:src="@drawable/v5_0_1_flipper_head_separator" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dip"
+            android:layout_marginLeft="8dip"
+            android:gravity="center_vertical"
+            android:text="添加增值业务"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/ywname"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="业务名称" />
+
+        <EditText
+            android:id="@+id/edityewuname"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/v5_0_1_publisher_poi_text_bg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/sfbiaozhun"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="收费标准" />
+
+        <EditText
+            android:id="@+id/editshoufeibiaozhun"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/v5_0_1_publisher_poi_text_bg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l_remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/bz"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="备注" />
+
+        <EditText
+            android:id="@+id/editbeizhu"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/v5_0_1_publisher_poi_text_bg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l_remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/ywNum"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="业务代码" />
+
+        <EditText
+            android:id="@+id/edityewuNum"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/v5_0_1_publisher_poi_text_bg" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/caozuobtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/v5_0_1_guide_button_blue_background"
+        android:gravity="center"
+        android:text="确定" />
+
+</LinearLayout>

@@ -12,7 +12,7 @@
         android:orientation="horizontal" >
 
         <ImageButton
-            android:id="@+id/imageButton_adminhome6"
+            android:id="@+id/imageButton_adminhome4_new_system"
             android:layout_width="54dip"
             android:layout_height="fill_parent"
             android:background="@drawable/title_style"
@@ -29,7 +29,7 @@
             android:layout_height="48dip"
             android:layout_marginLeft="8dip"
             android:gravity="center_vertical"
-            android:text="功能菜单"
+            android:text="系统管理"
             android:textColor="#FFFFFF"
             android:textSize="20sp" />
     </LinearLayout>
@@ -58,39 +58,21 @@
                 android:gravity="center"
                 android:orientation="horizontal" >
 
-                <!-- <Button
-                    android:id="@+id/admin6_btn1"
-                    android:layout_width="130dp"
-                    android:layout_height="130dp"
-                    android:layout_margin="5dp"
-                    android:background="@drawable/logo2"
-                    android:textColor="#ffffffff" /> -->
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#ffffffff"
-                android:gravity="center"
-                android:orientation="horizontal" >
-
                 <Button
-                    android:id="@+id/admin6_btn2"
+                    android:id="@+id/admin4_new_s_btn1"
                     android:layout_width="130dp"
                     android:layout_height="130dp"
                     android:layout_margin="5dp"
                     android:background="@drawable/btn1_style"
-                    android:text="选择关怀对象"
+                    android:text="街道管理"
                     android:textColor="#ffffffff" />
 
                 <Button
-                    android:id="@+id/admin6_btn3"
+                    android:id="@+id/admin4_new_s_btn2"
                     android:layout_width="130dp"
                     android:layout_height="130dp"
                     android:layout_margin="5dp"
-                    android:background="@drawable/btn3_style"
-                    android:text="个人信息"
+                    android:background="@drawable/logo2"
                     android:textColor="#ffffffff" />
             </TableRow>
 
@@ -103,21 +85,21 @@
                 android:orientation="horizontal" >
 
                 <Button
-                    android:id="@+id/admin6_btn4"
+                    android:id="@+id/admin4_new_s_btn3"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/btn1_style"
+                    android:text="小区管理"
+                    android:textColor="#ffffffff" />
+
+                <Button
+                    android:id="@+id/admin4_new_s_btn4"
                     android:layout_width="130dp"
                     android:layout_height="130dp"
                     android:layout_margin="5dp"
                     android:background="@drawable/btn4_style"
-                    android:text="密码修改"
-                    android:textColor="#ffffffff" />
-
-                <Button
-                    android:id="@+id/admin6_btn5"
-                    android:layout_width="130dp"
-                    android:layout_height="130dp"
-                    android:layout_margin="5dp"
-                    android:background="@drawable/btn5_style"
-                    android:text="退出登录"
+                    android:text="增值服务"
                     android:textColor="#ffffffff" />
             </TableRow>
         </TableLayout>
