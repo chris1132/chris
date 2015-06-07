@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="4dip"
+    android:paddingLeft="12dip"
+    android:paddingRight="12dip" >
+    
+    <TextView 
+        android:id="@+id/numcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Date" />
+
+    <TextView
+        android:id="@+id/ItemLatLng"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/numcount"
+        android:text="No Date" />
+
+    <TextView
+        android:id="@+id/ItemLocation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ItemLatLng"
+		android:layout_toRightOf="@+id/numcount"
+        android:text="No Date" />
+    
+    <TextView
+        android:id="@+id/ItemTime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ItemLocation"
+        android:layout_toRightOf="@+id/numcount"
+        android:text="No Date" />
+
+</RelativeLayout>

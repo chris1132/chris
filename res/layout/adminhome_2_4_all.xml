@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvself"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/self"
+        android:textSize="30sp" />
+    
+    <TextView
+        android:id="@+id/selfx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="行动能力" />
+
+    <RadioGroup
+        android:id="@+id/rgself1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb1self1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自理" />
+
+        <RadioButton
+            android:id="@+id/rb1self2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="需要帮助" />
+
+        <RadioButton
+            android:id="@+id/rb1self3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部帮助" />
+    </RadioGroup>
+    
+    <TextView
+        android:id="@+id/selfs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="梳头情况" />
+
+    <RadioGroup
+        android:id="@+id/rgself2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb2self1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自理" />
+
+        <RadioButton
+            android:id="@+id/rb2self2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="需要帮助" />
+
+        <RadioButton
+            android:id="@+id/rb2self3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部帮助" />
+    </RadioGroup>
+    
+    <TextView
+        android:id="@+id/selfxi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="洗脸情况" />
+
+    <RadioGroup
+        android:id="@+id/rgself3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb3self1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自理" />
+
+        <RadioButton
+            android:id="@+id/rb3self2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="需要帮助" />
+
+        <RadioButton
+            android:id="@+id/rb3self3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部帮助" />
+    </RadioGroup>
+    
+    <TextView
+        android:id="@+id/selfxit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="洗头情况" />
+
+    <RadioGroup
+        android:id="@+id/rgself4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb4self1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自理" />
+
+        <RadioButton
+            android:id="@+id/rb4self2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="需要帮助" />
+
+        <RadioButton
+            android:id="@+id/rb4self3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部帮助" />
+    </RadioGroup>
+    
+    <TextView
+        android:id="@+id/selfsh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="刷牙情况" />
+
+    <RadioGroup
+        android:id="@+id/rgself5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb5self1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自理" />
+
+        <RadioButton
+            android:id="@+id/rb5self2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="需要帮助" />
+
+        <RadioButton
+            android:id="@+id/rb5self3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部帮助" />
+    </RadioGroup>
+    
+    <TextView
+        android:id="@+id/selfxij"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="洗脚情况" />
+
+    <RadioGroup
+        android:id="@+id/rgself6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb6self1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自理" />
+
+        <RadioButton
+            android:id="@+id/rb6self2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="需要帮助" />
+
+        <RadioButton
+            android:id="@+id/rb6self3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部帮助" />
+    </RadioGroup>
+    
+    <TextView
+        android:id="@+id/selft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="剃须情况" />
+
+    <RadioGroup
+        android:id="@+id/rgself7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb7self1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自理" />
+
+        <RadioButton
+            android:id="@+id/rb7self2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="需要帮助" />
+
+        <RadioButton
+            android:id="@+id/rb7self3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部帮助" />
+    </RadioGroup>
+    
+    <TextView
+        android:id="@+id/selfxiu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="修指甲情况" />
+
+    <RadioGroup
+        android:id="@+id/rgself8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb8self1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自理" />
+
+        <RadioButton
+            android:id="@+id/rb8self2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="需要帮助" />
+
+        <RadioButton
+            android:id="@+id/rb8self3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部帮助" />
+    </RadioGroup>
+    
+    <TextView
+        android:id="@+id/selfxiy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="洗衣情况" />
+
+    <RadioGroup
+        android:id="@+id/rgself9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb9self1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自理" />
+
+        <RadioButton
+            android:id="@+id/rb9self2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="需要帮助" />
+
+        <RadioButton
+            android:id="@+id/rb9self3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部帮助" />
+    </RadioGroup>
+    
+    <TextView
+        android:id="@+id/selfc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="穿脱衣服情况" />
+
+    <RadioGroup
+        android:id="@+id/rgself10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb10self1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自理" />
+
+        <RadioButton
+            android:id="@+id/rb10self2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="需要帮助" />
+
+        <RadioButton
+            android:id="@+id/rb10self3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部帮助" />
+    </RadioGroup>
+    
+    <TextView
+        android:id="@+id/selfyin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="饮食情况" />
+
+    <RadioGroup
+        android:id="@+id/rgself11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb11self1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自理" />
+
+        <RadioButton
+            android:id="@+id/rb11self2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="需要帮助" />
+
+        <RadioButton
+            android:id="@+id/rb11self3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部帮助" />
+    </RadioGroup>
+    
+    <TextView
+        android:id="@+id/selfp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="排泄情况" />
+
+    <RadioGroup
+        android:id="@+id/rgself12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb12self1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自理" />
+
+        <RadioButton
+            android:id="@+id/rb12self2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="需要帮助" />
+
+        <RadioButton
+            android:id="@+id/rb12self3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部帮助" />
+    </RadioGroup>
+    
+    <TextView 
+        android:id="@+id/sleeptime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="睡觉时间:"/>
+    
+    <TextView 
+        android:id="@+id/getuptime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="起床时间:"/>
+    
+    <TextView 
+        android:id="@+id/isrest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="是否有午休"/>
+    
+    <RadioGroup
+        android:id="@+id/rgisrest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rgisrest1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是" />
+
+        <RadioButton
+            android:id="@+id/rgisrest2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="否" />
+    </RadioGroup>
+    
+    <TextView 
+        android:id="@+id/isdrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="是否饮酒"/>
+    
+    <RadioGroup
+        android:id="@+id/rgisdrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rgisdrink1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是" />
+
+        <RadioButton
+            android:id="@+id/rgisdrink2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="否" />
+    </RadioGroup>
+    
+    <TextView 
+        android:id="@+id/drink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="酒量/次"/>
+    
+    <RadioGroup
+        android:id="@+id/rgdrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rgdrink1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小于1瓶" />
+
+        <RadioButton
+            android:id="@+id/rgdrink2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1~3瓶" />
+        
+        <RadioButton
+            android:id="@+id/rgdrink3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3~6瓶" />
+        
+        <RadioButton
+            android:id="@+id/rgdrink4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6瓶以上" />
+    </RadioGroup>
+    
+    <TextView 
+        android:id="@+id/drinkold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="酒龄(年)"/>
+    
+    <TextView 
+        android:id="@+id/issmoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="是否吸烟"/>
+    
+    <RadioGroup
+        android:id="@+id/rgisdrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rgissmoke1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是" />
+
+        <RadioButton
+            android:id="@+id/rgissmoke2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="否" />
+    </RadioGroup>
+    
+    <TextView 
+        android:id="@+id/smoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="烟量/次"/>
+    
+    <RadioGroup
+        android:id="@+id/rgsmoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rgsmoke1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小于1包" />
+
+        <RadioButton
+            android:id="@+id/rgsmoke2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1~2包" />
+        
+        <RadioButton
+            android:id="@+id/rgsmoke3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3~4包" />
+        
+        <RadioButton
+            android:id="@+id/rgsmoke4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4包以上" />
+    </RadioGroup>
+    
+    <TextView 
+        android:id="@+id/drinkold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="烟龄(年)"/>
+
+</LinearLayout>

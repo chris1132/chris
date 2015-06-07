@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/headtitle_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="#663333"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imageButton_use_3_1_add"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/title_style"
+            android:src="@drawable/btn1" />
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_height="24dip"
+            android:layout_gravity="center"
+            android:src="@drawable/v5_0_1_flipper_head_separator" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dip"
+            android:layout_marginLeft="8dip"
+            android:gravity="center_vertical"
+            android:text="添加循环提醒"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/use_3_1_add_sc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="提醒内容" />
+
+            <EditText
+                android:id="@+id/repeat_remind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:ems="10" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="开始时间(年/月/日/时/分/秒)" />
+            
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                
+                <EditText 
+                    android:id="@+id/use_3_1add_year"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:hint="xxxx"/>
+                
+                <Button 
+                    android:id="@+id/use_3_1add_yearup"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/use_3_1add_year"
+                    android:text="↑"
+                    android:textSize="20dp"/>
+                
+                <Button 
+                    android:id="@+id/use_3_1add_yeardown"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/use_3_1add_yearup"
+                    android:text="↓"
+                    android:textSize="20dp"/>
+                
+                <EditText 
+                    android:id="@+id/use_3_1add_month"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/use_3_1add_year"
+                    android:hint="xx"/>
+                
+                <Button 
+                    android:id="@+id/use_3_1add_monthup"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/use_3_1add_month"
+                    android:layout_below="@+id/use_3_1add_year"
+                    android:text="↑"
+                    android:textSize="20dp"/>
+                
+                <Button 
+                    android:id="@+id/use_3_1add_monthdown"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/use_3_1add_monthup"
+                    android:layout_below="@+id/use_3_1add_year"
+                    android:text="↓"
+                    android:textSize="20dp"/>
+                
+                <EditText 
+                    android:id="@+id/use_3_1add_day"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/use_3_1add_month"
+                    android:hint="xx"/>
+                
+                <Button 
+                    android:id="@+id/use_3_1add_dayup"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/use_3_1add_day"
+                    android:layout_below="@+id/use_3_1add_month"
+                    android:text="↑"
+                    android:textSize="20dp"/>
+                
+                <Button 
+                    android:id="@+id/use_3_1add_daydown"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/use_3_1add_dayup"
+                    android:layout_below="@+id/use_3_1add_month"
+                    android:text="↓"
+                    android:textSize="20dp"/>
+                
+                <EditText 
+                    android:id="@+id/use_3_1add_hour"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/use_3_1add_day"
+                    android:hint="xx"/>
+                
+                <Button 
+                    android:id="@+id/use_3_1add_hourup"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/use_3_1add_hour"
+                    android:layout_below="@+id/use_3_1add_day"
+                    android:text="↑"
+                    android:textSize="20dp"/>
+                
+                <Button 
+                    android:id="@+id/use_3_1add_hourdown"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/use_3_1add_hourup"
+                    android:layout_below="@+id/use_3_1add_day"
+                    android:text="↓"
+                    android:textSize="20dp"/>
+                
+                <EditText 
+                    android:id="@+id/use_3_1add_minute"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/use_3_1add_hour"
+                    android:hint="xx"/>
+                
+                <Button 
+                    android:id="@+id/use_3_1add_minuteup"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/use_3_1add_minute"
+                    android:layout_below="@+id/use_3_1add_hour"
+                    android:text="↑"
+                    android:textSize="20dp"/>
+                
+                <Button 
+                    android:id="@+id/use_3_1add_minutedown"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/use_3_1add_minuteup"
+                    android:layout_below="@+id/use_3_1add_hour"
+                    android:text="↓"
+                    android:textSize="20dp"/>
+                
+                <EditText 
+                    android:id="@+id/use_3_1add_second"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/use_3_1add_minute"
+                    android:hint="xx"/>
+                
+                <Button 
+                    android:id="@+id/use_3_1add_secondup"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/use_3_1add_second"
+                    android:layout_below="@+id/use_3_1add_minute"
+                    android:text="↑"
+                    android:textSize="20dp"/>
+                
+                <Button 
+                    android:id="@+id/use_3_1add_seconddown"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/use_3_1add_secondup"
+                    android:layout_below="@+id/use_3_1add_minute"
+                    android:text="↓"
+                    android:textSize="20dp"/>
+            </RelativeLayout>
+            
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="间隔时间（天）" />
+
+            <EditText
+                android:id="@+id/repeat_intervaltime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:ems="10" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="当前状态" />
+
+            <RadioGroup
+                android:id="@+id/nowstate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/disposable_useable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="启用" />
+
+                <RadioButton
+                    android:id="@+id/disposable_useunable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未启用" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="操作" />
+
+            <Button
+                android:id="@+id/use_3_1sure"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_margin="10dp"
+                android:background="@drawable/v5_0_1_flipper_head_blue_background"
+                android:text="确定" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

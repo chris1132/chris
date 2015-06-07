@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/headtitle_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="#663333"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imageButton_usehome"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/title_style"
+            android:src="@drawable/v5_0_1_flipper_head_flip" />
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_height="24dip"
+            android:layout_gravity="center"
+            android:src="@drawable/v5_0_1_flipper_head_separator" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dip"
+            android:text="导航"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="8dip"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancelservice"
+        android:textSize="30sp" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/ckall"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/ckall" />
+
+            <TextView
+                android:id="@+id/tvnum"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="编号" />
+
+            <TextView
+                android:id="@+id/tvname"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="业务名称" />
+
+            <TextView
+                android:id="@+id/tvfee"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="收费标准" />
+
+            <TextView
+                android:id="@+id/tvstate"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="状态" />
+
+            <TextView
+                android:id="@+id/tvother"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="备注" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/btncancel"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/v5_0_1_guide_button_blue_background"
+        android:text="@string/cancelservice" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/ckall2"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ckall" />
+
+                <TextView
+                    android:id="@+id/tvnum2"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="编号" />
+
+                <TextView
+                    android:id="@+id/tvname2"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="业务名称" />
+
+                <TextView
+                    android:id="@+id/tvfee2"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="收费标准" />
+
+                <TextView
+                    android:id="@+id/tvstate2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="状态" />
+
+                <TextView
+                    android:id="@+id/tvother2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="备注" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/ck1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/num1"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="1" />
+
+                <TextView
+                    android:id="@+id/name1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="社区活动" />
+
+                <TextView
+                    android:id="@+id/fee1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="5元/月" />
+
+                <TextView
+                    android:id="@+id/state1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="未启用" />
+
+                <TextView
+                    android:id="@+id/other1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/ck2"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/num2"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="2" />
+
+                <TextView
+                    android:id="@+id/name2"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="商品打折" />
+
+                <TextView
+                    android:id="@+id/fee2"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="5元/月" />
+
+                <TextView
+                    android:id="@+id/state2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="未启用" />
+
+                <TextView
+                    android:id="@+id/other2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/ck3"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/num3"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="3" />
+
+                <TextView
+                    android:id="@+id/name3"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="测试服务4" />
+
+                <TextView
+                    android:id="@+id/fee3"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="5元/月" />
+
+                <TextView
+                    android:id="@+id/state3"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="未启用" />
+
+                <TextView
+                    android:id="@+id/other3"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/v5_0_1_guide_button_blue_background"
+        android:text="@string/addservices" />
+
+</LinearLayout>

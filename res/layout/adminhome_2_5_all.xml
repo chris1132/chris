@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView
+        android:id="@+id/hshealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/llhealth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvhealth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/health"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/healthx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvhealth"
+                android:text="血型" />
+
+            <RadioGroup
+                android:id="@+id/rghealth1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/healthx"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb1health1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A" />
+
+                <RadioButton
+                    android:id="@+id/rb1health2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B" />
+
+                <RadioButton
+                    android:id="@+id/rb1health3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AB" />
+
+                <RadioButton
+                    android:id="@+id/rb1health4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="O" />
+
+                <RadioButton
+                    android:id="@+id/rb1health5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="其它" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/healthq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rghealth1"
+                android:text="起搏器" />
+
+            <RadioGroup
+                android:id="@+id/rghealth2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/healthq"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb2health1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="无" />
+
+                <RadioButton
+                    android:id="@+id/rb2health2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="有" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/healths"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rghealth2"
+                android:text="视力" />
+
+            <RadioGroup
+                android:id="@+id/rghealth3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/healths"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb3health1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="好" />
+
+                <RadioButton
+                    android:id="@+id/rb3health2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="模糊" />
+
+                <RadioButton
+                    android:id="@+id/rb3health3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="基本上看不清" />
+
+                <RadioButton
+                    android:id="@+id/rb3health4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="全盲" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/healtht"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rghealth3"
+                android:text="听力" />
+
+            <RadioGroup
+                android:id="@+id/rghealth4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/healtht"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb4health1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="好" />
+
+                <RadioButton
+                    android:id="@+id/rb4health2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="听不清" />
+
+                <RadioButton
+                    android:id="@+id/rb4health3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="很大声才能听见" />
+
+                <RadioButton
+                    android:id="@+id/rb4health4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="全聋" />
+            </RadioGroup>
+            
+            <TextView
+                android:id="@+id/healthj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rghealth4"
+                android:text="记忆力" />
+
+            <RadioGroup
+                android:id="@+id/rghealth5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/healthj"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb5health1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="好" />
+
+                <RadioButton
+                    android:id="@+id/rb5health2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="能记起5分钟前的事" />
+
+                <RadioButton
+                    android:id="@+id/rb5health3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提醒后能记起5分钟前的事" />
+
+                <RadioButton
+                    android:id="@+id/rb5health4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="认识家人" />
+                
+                <RadioButton
+                    android:id="@+id/rb5health5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="能分清早、中、晚" />
+            </RadioGroup>
+            
+            <TextView
+                android:id="@+id/healthsh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rghealth5"
+                android:text="手术史" />
+
+            <RadioGroup
+                android:id="@+id/rghealth6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/healthsh"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb6health1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="无" />
+
+                <RadioButton
+                    android:id="@+id/rb6health2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="有" />
+
+            </RadioGroup>
+            
+            <TextView
+                android:id="@+id/healthh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rghealth6"
+                android:text="活动状态" />
+
+            <RadioGroup
+                android:id="@+id/rghealth7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/healthh"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb7health1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="平稳" />
+
+                <RadioButton
+                    android:id="@+id/rb7health2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="医疗辅助下能活动" />
+                
+                <RadioButton
+                    android:id="@+id/rb7health3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="护理照顾下能活动" />
+                
+                <RadioButton
+                    android:id="@+id/rb7health4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="经常跌倒" />
+                
+                <RadioButton
+                    android:id="@+id/rb7health5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="不能动" />
+
+            </RadioGroup>
+            
+            <TextView
+                android:id="@+id/healthy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rghealth7"
+                android:text="用药情况" />
+
+            <RadioGroup
+                android:id="@+id/rghealth8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/healthy"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb8health1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="小于2种" />
+
+                <RadioButton
+                    android:id="@+id/rb8health2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2~4种" />
+                
+                <RadioButton
+                    android:id="@+id/rb8health3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4~8种" />
+                
+                <RadioButton
+                    android:id="@+id/rb8health4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="大于8种" />
+
+            </RadioGroup>
+            
+            <TextView
+                android:id="@+id/healthyi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rghealth8"
+                android:text="以下为病史选项" />
+            
+            <CheckBox
+                android:id="@+id/ckhealth1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/healthyi"
+                android:text="无" />
+            
+            <CheckBox
+                android:id="@+id/ckhealth2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ckhealth1"
+                android:layout_below="@+id/healthyi"
+                android:text="高血压" />
+            
+            <CheckBox
+                android:id="@+id/ckhealth3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ckhealth2"
+                android:layout_below="@+id/healthyi"
+                android:text="冠心病" />
+            
+            <CheckBox
+                android:id="@+id/ckhealth4"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ckhealth3"
+                android:layout_below="@+id/healthyi"
+                android:text="糖尿病" />
+            
+            <CheckBox
+                android:id="@+id/ckhealth5"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ckhealth4"
+                android:layout_below="@+id/healthyi"
+                android:text="痛风" />
+            
+            <CheckBox
+                android:id="@+id/ckhealth6"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ckhealth5"
+                android:text="慢性支气管炎" />
+            
+            <CheckBox
+                android:id="@+id/ckhealth7"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ckhealth6"
+                android:layout_below="@+id/ckhealth5"
+                android:text="脊椎病" />
+            
+            <CheckBox
+                android:id="@+id/ckhealth8"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ckhealth7"
+                android:layout_below="@+id/ckhealth5"
+                android:text="高血脂" />
+            
+            <CheckBox
+                android:id="@+id/ckhealth9"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ckhealth8"
+                android:layout_below="@+id/ckhealth5"
+                android:text="心梗/脑梗" />
+            
+            <CheckBox
+                android:id="@+id/ckhealth10"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ckhealth9"
+                android:layout_below="@+id/ckhealth5"
+                android:text="支气管哮喘" />
+            
+            <CheckBox
+                android:id="@+id/ckhealth11"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ckhealth10"
+                android:text="慢性胃炎" />
+            
+            <CheckBox
+                android:id="@+id/ckhealth12"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ckhealth11"
+                android:layout_below="@+id/ckhealth10"
+                android:text="腰椎间盘突出" />
+            
+            <CheckBox
+                android:id="@+id/ckhealth13"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ckhealth12"
+                android:layout_below="@+id/ckhealth10"
+                android:text="食管炎" />
+            
+            <CheckBox
+                android:id="@+id/ckhealth14"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ckhealth13"
+                android:layout_below="@+id/ckhealth10"
+                android:text="耳聋" />
+            
+            <CheckBox
+                android:id="@+id/ckhealth15"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ckhealth14"
+                android:layout_below="@+id/ckhealth10"
+                android:text="癫痫病" />
+            
+            <CheckBox
+                android:id="@+id/ckhealth16"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ckhealth15"
+                android:text="肝病" />
+            
+            <CheckBox
+                android:id="@+id/ckhealth17"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ckhealth16"
+                android:layout_below="@+id/ckhealth15"
+                android:text="肺结核" />
+            
+            <CheckBox
+                android:id="@+id/ckhealth18"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ckhealth17"
+                android:layout_below="@+id/ckhealth15"
+                android:text="尘肺病" />
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

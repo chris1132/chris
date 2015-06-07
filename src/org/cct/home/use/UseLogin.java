@@ -6,6 +6,7 @@ import java.net.SocketException;
 import java.util.Enumeration;
 
 import org.cct.home.R;
+import org.cct.home.location.TestActivity;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -61,6 +62,87 @@ public class UseLogin extends Activity {
 		location = (Button) findViewById(R.id.location);
 
 		login.setOnClickListener(new LoginListener());
+		location.setOnClickListener(new LocationListener());
+
+	}
+
+	private class LoginThread extends Thread {
+
+		private UseLogin activity;
+
+		public LoginThread(UseLogin act) {
+			activity = act;
+		}
+
+		@Override
+		public void run() {
+			userimpl = new Userimpl();
+			user = new User();
+			user = userimpl
+					.loginwithreuser(name, password, getLocalIpAddress());
+
+			if (user == null) {
+				i = 1;
+			} else {
+				i = 0;
+			}
+
+			activity.handler.sendEmptyMessage(i);
+			if (dialog.isShowing()) {
+				dialog.dismiss();
+			}
+		}
+
+	}
+
+	private Handler handler = new Handler() {
+
+		@Override
+		public void handleMessage(Message msg) {
+			switch (msg.what) {
+			case 0:
+				boolean autoLogin = auto.isChecked();
+				if (autoLogin) {
+					Editor editor = sp2.edit();
+					editor.putString("uname", name);
+					editor.putString("upswd", password);
+					editor.putBoolean("auto", true);
+					editor.commit();
+				} else {
+					Editor editor = sp2.edit();
+					editor.putString("uname", null);
+					editor.putString("upswd", null);
+					editor.putBoolean("auto", false);
+					editor.commit();
+				}
+				useId = user.getUserid();
+				Intent intent = new Intent();
+				intent.setClass(UseLogin.this, UseCareSelevt.class);
+				UseLogin.this.startActivity(intent);
+				UseLogin.this.finish();
+				break;
+
+			case 1:
+				Toast.makeText(UseLogin.this, R.string.warning,
+						Toast.LENGTH_LONG).show();
+				break;
+
+			default:
+				break;
+			}
+		}
+
+	};
+
+	class LocationListener implements OnClickListener {
+
+		@Override
+		public void onClick(View v) {
+			// TODO Auto-generated method stub
+			Intent intent = new Intent();
+			intent.setClass(UseLogin.this, TestActivity.class);
+			startActivity(intent);
+		}
 
 	}
 
@@ -72,7 +154,9 @@ public class UseLogin extends Activity {
 			name = usename.getText().toString();
 			password = usepassword.getText().toString();
 
-			Toast.makeText(UseLogin.this, name + "," + password, Toast.LENGTH_SHORT).show();
+			dialog = ProgressDialog.show(UseLogin.this, "登入中", "正在登入,请稍后..",
+					true, false);
+			new LoginThread(UseLogin.this).start();
 
 		}
 

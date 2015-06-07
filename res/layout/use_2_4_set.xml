@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/headtitle_linear2_4_set"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="#663333"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imageButton_use_2_4_set"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/title_style"
+            android:src="@drawable/btn1" />
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_height="24dip"
+            android:layout_gravity="center"
+            android:src="@drawable/v5_0_1_flipper_head_separator" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dip"
+            android:layout_marginLeft="35dip"
+            android:gravity="center_vertical"
+            android:text="静默报警设置"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/starttimetv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headtitle_linear2_4_set"
+        android:layout_margin="5dp"
+        android:text="开始时间/时" />
+
+    <EditText
+        android:id="@+id/use_2_4_starttime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/starttimetv"
+        android:layout_margin="5dp"
+        android:hint="请输入开始时间(时)" />
+    
+    <TextView
+        android:id="@+id/endtimetv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/use_2_4_starttime"
+        android:layout_margin="5dp"
+        android:text="结束时间/时" />
+
+    <EditText
+        android:id="@+id/use_2_4_endtime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/endtimetv"
+        android:layout_margin="5dp"
+        android:hint="请输入结束时间(时)" />
+    
+    <TextView
+        android:id="@+id/silencetimetv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/use_2_4_endtime"
+        android:layout_margin="5dp"
+        android:text="静默时间/小时" />
+
+    <EditText
+        android:id="@+id/use_2_4_silencetime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/silencetimetv"
+        android:layout_margin="5dp"
+        android:hint="请输入静默时间(小时)" />
+    
+    <Button 
+        android:id="@+id/use_2_4_setsure"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/use_2_4_silencetime"
+        android:layout_margin="5dp"
+        android:background="@drawable/v5_0_1_guide_button_blue_background"
+        android:text="确定"/>
+
+</RelativeLayout>
